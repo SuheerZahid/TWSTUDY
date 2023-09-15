@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>TWSTUDY</title>
+</head>
+
+<body>
+
+    <!-- Off-canvas -->
+    <button class="btn btn-light offcanvas-btn" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-gear"></i></button>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <h3 class="offcanvas-body-title text-center mb-4">Style Switcher</h3>
+            <div class="ThemeBackground">
+                <div class="form-check form-switch">
+                    <input class="form-check-input my-2" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Light Mode</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" id="main-container">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><span>TWS</span>TUDY</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Course
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="courses.html">Course</a></li>
+                                <li><a class="dropdown-item" href="coursesDetail.html">Course Details</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </button>
+                            <ul class="dropdown-menu my-0">
+                                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                <li><a class="dropdown-item" href="SignUp.html">Sign up</a></li>
+                            </ul>
+                        </div>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Section-one -->
+        <section class="section-one">
+            <div class="container">
+                <div class="row mx-0">
+                    <div class="col-lg-6 col-sm-12 my-4 section-one-content">
+
+                        <h3 class="section-one-h3">An Investement In Knowledge Pays The Best Interest.</h3>
+                        <h1 class="section-one-h1">Best Online Platform <br>For Learning.</h1>
+                        <p class="section-one-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eaque
+                            eius laborum impedit
+                            laudantium repellat fugiat error.</p>
+
+                        <a href="SignUp.html" class="btn section-one-btn px-4 py-2">Join Free</a>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 my-4 section-one-handmade-circle text-center">
+                        <img src="stu-img.png" alt="" width="60%" height="100%">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section-two -->
+        <section class="section-two">
+            <div class="container">
+                <div class="row mx-0">
+                    <div class="section-two-content d-flex justify-content-around">
+                        <div class="box text-center" id="box-1"><span>800k</span> <br> Students Move</div>
+                        <div class="box text-center" id="box-2"><span>500+</span> <br> Courses</div>
+                        <div class="box text-center" id="box-3"><span>50+ </span><br> Countries</div>
+                        <div class="box text-center" id="box-4"><span>100+</span> <br> Skilled Instructor</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section-three -->
+        <section class="section-three" id="main-courses">
+            <div class="container text-center">
+                <h4 class="section-three-h4 text-center ">Courses</h4>
+                <h2 class="section-three-h2 text-center ">Find The Right Course For You</h2>
+
+                <div class="row mx-auto justify-content-between">
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 my-3">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bGFwdG9wfGVufDB8fDB8fHww&w=1000&q=80"
+                                class="card-img-top px-0" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Html For Beginners</h5>
+                                <p class="card-text"><i class="fa-solid fa-user mx-2"></i> <span>Mohammad Sayed</span>
+                                </p>
+                                <p class="card-text"><span>(4.5)</span>
+                                    <i class="fa-solid fa-star" style="color: #ffe600;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffe600;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffe600;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffe600;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffe600;"></i>
+                                    <span>(230)</span>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 my-3">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuJTIwbGFwdG9wfGVufDB8fDB8fHww&w=1000&q=80"
+                                class="card-img-top px-0" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">CSS For Beginners</h5>
+                                <p class="card-text"><i class="fa-solid fa-user mx-2"></i> <span>Mohammad Sayed</span>
+                                </p>
+                                <p class="card-text"><span>(4.5)</span>
+                                    <i class="fa-solid fa-star" style="color: #ffe600;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffe600;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffe600;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffe600;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffe600;"></i>
+                                    <span>(230)</span>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 my-3">
+                        <div class="card">
+                            <img src="https://www.wallpaperflare.com/static/303/426/359/startup-start-up-notebooks-creative-wallpaper-preview.jpg"
+                                class="card-img-top px-0" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">JS For Beginners</h5>
+                                <p class="card-text"><i class="fa-solid fa-user mx-2"></i> <span>Mohammad Sayed</span>
+                                </p>
+                                <p class="card-text"><span>(4.5)</span>
+                                    <i class="fa-solid fa-star" style="color: #ffe600;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffe600;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffe600;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffe600;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffe600;"></i>
+                                    <span>(230)</span>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 my-3">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1508780709619-79562169bc64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d29yayUyMGxhcHRvcHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+                                class="card-img-top px-0" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Php For Beginners</h5>
+                                <p class="card-text"><i class="fa-solid fa-user mx-2"></i> <span>Mohammad Sayed</span>
+                                </p>
+                                <p class="card-text"><span>(4.5)</span>
+                                    <i class="fa-solid fa-star" style="color: #ffe600;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffe600;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffe600;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffe600;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffe600;"></i>
+                                    <span>(230)</span>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+                <a href="courses.html" class="btn section-three-btn">View All Courses</a>
+            </div>
+
+        </section>
+
+
+        <!-- Section-four -->
+        <section class="section-four" id="studentFeedback">
+            <h5 class="section-four-h5 text-center">Students Feedback</h5>
+            <h2 class="section-four-h2 text-center">What Our Student Say</h2>
+            <!-- Carousel wrapper -->
+            <div id="carouselExampleControls" class="carousel slide text-center carousel-dark" data-mdb-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="rounded-circle shadow-1-strong mb-4"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLdTKe1HoEhs3UAkDZXjyxwRHXuCkn7THhHw&usqp=CAU"
+                            alt="avatar" style="width: 150px;" />
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-8">
+                                <h5 class="mb-3">Mohammad Sayed</h5>
+                                <p>Web Developer</p>
+                                <p class="text-muted">
+                                    <i class="fas fa-quote-left pe-2 text"></i>
+                                <p class="carousel-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                                    nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
+                                    fugit consequatur laudantium velit magnam</p>
+                                </p>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="far fa-star fa-sm"></i></li>
+                        </ul>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="rounded-circle shadow-1-strong mb-4"
+                            src="https://img.freepik.com/premium-vector/man-avatar-icon-flat-illustration-man-avatar-vector-icon-any-web-design_98396-3362.jpg"
+                            alt="avatar" style="width: 150px;" />
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-8">
+                                <h5 class="mb-3">Mohammad Sayed</h5>
+                                <p>Web Developer</p>
+                                <p class="text-muted">
+                                    <i class="fas fa-quote-left pe-2"></i>
+                                <p class="carousel-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                                    nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
+                                    fugit consequatur laudantium velit magnam</p>
+                                </p>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="far fa-star fa-sm"></i></li>
+                        </ul>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="rounded-circle shadow-1-strong mb-4"
+                            src="https://img.freepik.com/premium-vector/man-avatar-icon-flat-illustration-man-avatar-vector-icon-any-web-design_98396-3378.jpg?w=2000"
+                            alt="avatar" style="width: 150px;" />
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-8">
+                                <h5 class="mb-3">Mohammad Sayed</h5>
+                                <p>Web Developer</p>
+                                <p class="text-muted">
+                                    <i class="fas fa-quote-left pe-2"></i>
+                                <p class="carousel-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                                    nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
+                                    fugit consequatur laudantium velit magnam</p>
+                                </p>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="far fa-star fa-sm"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls"
+                    data-mdb-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls"
+                    data-mdb-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- Carousel wrapper -->
+        </section>
+
+        <!-- Section-five -->
+        <section class="section-five" id="becomeAnInstructor">
+            <div class="container section-five-content container-background">
+                <div class="row mx-0">
+                    <div class="col-sm-12 col-md-6 section-five-left">
+                        <div class="handmade-circle text-center">
+                            <img src="teacher-img.png" alt="" width="60%" height="100%">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 section-five-right">
+                        <h4 class="section-five-h4">Become an Instructor</h4>
+                        <h2 class="section-five-h2">Become an Instructor</h2>
+                        <button class="btn section-five-btn">Apply Now</button>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-light" id="footer">
+            <section class="pt-3">
+                <div class="container text-start mt-5 mx-auto footer-container">
+                    <div class="row footer-row mt-3">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4"><span>TWS</span>TUDY</h6>
+                            <p><a href="#!" class="text-reset text-decoration-none">About</a></p>
+                            <p><a href="#!" class="text-reset text-decoration-none">What We Offer</a></p>
+                            <p><a href="#!" class="text-reset text-decoration-none">Careers</a></p>
+                            <p><a href="#!" class="text-reset text-decoration-none">Certificates</a></p>
+                            <p><a href="#!" class="text-reset text-decoration-none">Blog</a></p>
+                        </div>
+
+                        <!-- Grid column -->
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Learning</h6>
+                            <p><a href="#!" class="text-reset text-decoration-none">Get The App</a></p>
+                            <p><a href="#!" class="text-reset text-decoration-none">Testimonial</a></p>
+                            <p><a href="#!" class="text-reset text-decoration-none">Pricing</a></p>
+                            <p><a href="#!" class="text-reset text-decoration-none">Faq</a></p>
+                        </div>
+
+                        <!-- Grid column -->
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">More</h6>
+                            <p><a href="#!" class="text-reset text-decoration-none">Affiliates</a></p>
+                            <p><a href="#!" class="text-reset text-decoration-none">Become A Course Creator</a></p>
+                            <p><a href="#!" class="text-reset text-decoration-none">Trainnig Webinars</a></p>
+                            <p><a href="#!" class="text-reset text-decoration-none">Free Personality text</a></p>
+                            <p><a href="#!" class="text-reset text-decoration-none">Help and Support</a></p>
+                        </div>
+
+                        <!-- Grid column -->
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Get In Touch</h6>
+                            <p><i class="fa fa-facebook me-3"></i>Facebook</p>
+                            <p><i class="fa-brands fa-instagram me-3"></i>Instagram</p>
+                            <p><i class="fa-brands fa-youtube me-3"></i>YouTube</p>
+                            <p><i class="fa-brands fa-linkedin me-3"></i>LinkedIn</p>
+                            <p><i class="fa-brands fa-twitter me-3" style="color: #ffffff;"></i>Twitter</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Copyright -->
+            <div class="text-center p-4 copyright" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2023 Copyright:
+                <a class="text-reset fw-bold text-decoration-none" href="#">Suheer Zahid</a>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/04597dd294.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <img class="rounded-circle shadow-1-strong mb-4"
+src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLdTKe1HoEhs3UAkDZXjyxwRHXuCkn7THhHw&usqp=CAU"
+alt="avatar" style="width: 150px;" /> -->
+
+<!-- <img class="rounded-circle shadow-1-strong mb-4"
+    src="https://img.freepik.com/premium-vector/man-avatar-icon-flat-illustration-man-avatar-vector-icon-any-web-design_98396-3362.jpg"
+    alt="avatar" style="width: 150px;" /> -->
+
+<!-- <img class="rounded-circle shadow-1-strong mb-4"
+    src="https://img.freepik.com/premium-vector/man-avatar-icon-flat-illustration-man-avatar-vector-icon-any-web-design_98396-3378.jpg?w=2000"
+    alt="avatar" style="width: 150px;" /> -->
